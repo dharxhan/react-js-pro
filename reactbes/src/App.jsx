@@ -1,10 +1,10 @@
 import React from 'react'
-import Html from "./Basics/Html";
+import Sass from "./Sass/Sass.jsx";
 
 const App = () => {
   return (
     <div>
-      <Html></Html>
+      <Sass></Sass>
     </div>
   );
 };
