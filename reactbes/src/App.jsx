@@ -1,12 +1,14 @@
 import React from 'react'
-import Sass from "./Sass/Sass.jsx";
+import Javascript from "./Javascript/Javascript.jsx";
 
 const App = () => {
   return (
     <div>
-      <Sass></Sass>
+      <Javascript></Javascript>
     </div>
   );
 };
 
 export default App;
+
+sudeshresume.netlify.app
