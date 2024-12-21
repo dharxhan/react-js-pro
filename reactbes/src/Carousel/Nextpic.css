@@ -1,0 +1,21 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.App{
+    margin: 0;
+    justify-content: center;
+}
+
+.btn{
+    top: 50%;
+}

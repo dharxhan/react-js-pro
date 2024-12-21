@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Pagination/Pagination.css'; 
+import './Pagination/Pagination.css'; // Create a CSS file for styling
 
 const App = () => {
   const [birthdays, setBirthdays] = useState([
