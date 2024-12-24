@@ -19,7 +19,7 @@ const App = () => {
             <div key={index}>
               <p>{item.title}</p>
             </div>
-          );
+          ),
         })}
     </div>
   )
