@@ -35,7 +35,6 @@ const Home = () => {
                                 <td>{item.id}</td>
                                 <td>{item.name}</td>
                                 <td>{item.email}</td>
-                                <td>{item.age}</td>
                                 <td>
                                     <button>Edit</button>
                                     <button>Delete</button>
