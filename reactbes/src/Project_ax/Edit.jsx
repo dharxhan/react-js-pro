@@ -2,26 +2,31 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 
 
-const Home = () => {
-    const [data, setData]= useState([]);
+const Edit = () => {
+    const {id} = useParams();
+    const [values, setValues] = useState({name:"", email: ""});
 
     useEffect(() => {
-        axios.get("http://localhost:3000/employee").then((res) => {
-            setData(res.data);
+        axios.get("http://localhost:3000/users" +id).then((res) => {
+        
             console.log(res.data);
+            setValues(res.data);
         });
     },[data]);
 
-    function handleDelete(id){
-        axios
-        .delete("http://localhost:3000/users/"+id)
+    const navigate = useNavigate();
+
+    function handleCreate(e){
+        e.preventDefault();
+        axios.put("http://localhost:3000/users/", values)
         .then((res) =>
             console.log(res.data));
      Navigate("/");
+//use create file not home
 
     }
   return (
-    <div className='Home'>
+    <div className='Edit'>
         <nav>
             <h1>Crud App</h1>
             <button>Add+</button>
@@ -65,4 +70,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Edit
